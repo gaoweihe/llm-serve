@@ -1,4 +1,4 @@
-name: llm_pred
+name: llm_serve
 channels:
   - conda-forge
   - pytorch
