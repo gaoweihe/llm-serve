@@ -4,9 +4,9 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# torch.set_default_device("cuda")
+torch.set_default_device("cuda")
 app = FastAPI()
-model_name = "gpt2"  # or any Hugging Face model name
+model_name = "meta-llama/Meta-Llama-3-8B"  # or any Hugging Face model name
 model = AutoModelForCausalLM.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
