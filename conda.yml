@@ -1,0 +1,19 @@
+name: llm_pred
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - setuptools
+  - ipykernel
+  - pip: 
+    - fastapi
+    - transformers
+    - transformers 
+    - torch 
+    - fastapi 
+    - uvicorn
+    - streamlit 
+    - requests
